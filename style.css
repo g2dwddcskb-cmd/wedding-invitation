@@ -1,0 +1,27 @@
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Cormorant Garamond',serif;background:#050505;color:#fff}
+.hero{height:100vh;display:flex;align-items:center;justify-content:center;position:relative;
+background:radial-gradient(circle,rgba(212,175,55,.08),transparent 55%),linear-gradient(#050505,#090909,#020202)}
+#particles{position:absolute;inset:0;background:
+radial-gradient(circle at 20% 30%,rgba(212,175,55,.25) 1px,transparent 2px),
+radial-gradient(circle at 70% 60%,rgba(212,175,55,.18) 1px,transparent 2px),
+radial-gradient(circle at 40% 80%,rgba(212,175,55,.2) 1px,transparent 2px);
+animation:float 12s linear infinite}
+@keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-20px)}100%{transform:translateY(0)}}
+.hero-content{text-align:center;animation:fade 2s}
+@keyframes fade{from{opacity:0;transform:translateY(35px)}to{opacity:1;transform:none}}
+.monogram{color:#d4af37;letter-spacing:12px;font-size:28px;margin-bottom:25px}
+h1{font-size:92px;font-weight:500}
+h1 span{color:#d4af37;text-shadow:0 0 18px rgba(212,175,55,.5)}
+.date{margin:25px 0;font-size:28px;color:#e6c76d}
+button{padding:18px 46px;border-radius:40px;border:1px solid #d4af37;background:transparent;color:#fff;cursor:pointer;transition:.3s}
+button:hover{background:#d4af37;color:#000;transform:translateY(-4px)}
+.childhood{min-height:100vh;background:#f8f4eb;color:#6b5520;padding:120px 40px;text-align:center}
+.childhood h2{font-size:58px;margin-bottom:60px}
+.photos{display:flex;justify-content:center;align-items:center;gap:60px;flex-wrap:wrap}
+.photo img{width:260px;height:260px;border-radius:50%;object-fit:cover;border:6px solid #d4af37}
+.photo p{margin-top:20px;font-size:28px}
+.heart{font-size:70px;color:#d4af37;animation:pulse 2s infinite}
+@keyframes pulse{50%{transform:scale(1.15)}}
+.text{margin-top:60px;font-size:34px}
